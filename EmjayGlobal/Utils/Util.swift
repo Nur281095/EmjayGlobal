@@ -14,22 +14,22 @@ class Util: NSObject
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
    
-    class func isLoggedIn() -> Bool {
-        if self.getUser() != nil {
-            return true
-        } else {
-            return false
-        }
-    }
-    class func getUser() -> User?{
-        if let usrStr = UserDefaults.standard.object(forKey: "user") as? String {
-            if let userJson = usrStr.aa_toJson {
-                let usr = User(fromDictionary: userJson)
-                return usr
-            }
-        }
-        return nil
-    }
+//    class func isLoggedIn() -> Bool {
+//        if self.getUser() != nil {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+//    class func getUser() -> User?{
+//        if let usrStr = UserDefaults.standard.object(forKey: "user") as? String {
+//            if let userJson = usrStr.aa_toJson {
+//                let usr = User(fromDictionary: userJson)
+//                return usr
+//            }
+//        }
+//        return nil
+//    }
     class func logout() {
         DispatchQueue.main.async {
             let domain = Bundle.main.bundleIdentifier!

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01757BDF29164249000C31EE /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01757BDE29164249000C31EE /* info.plist */; };
 		018153D529161E3800CC932B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018153D429161E3800CC932B /* Assets.xcassets */; };
 		018153D829161E3800CC932B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018153D629161E3800CC932B /* LaunchScreen.storyboard */; };
 		018154982916225800CC932B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018153E02916225700CC932B /* Constants.swift */; };
@@ -14,7 +15,6 @@
 		0181549A2916225800CC932B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018153E22916225700CC932B /* Util.swift */; };
 		0181549B2916225800CC932B /* ALF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018153E42916225700CC932B /* ALF.swift */; };
 		0181549C2916225800CC932B /* AFN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018153E52916225700CC932B /* AFN.swift */; };
-		0181549E2916225800CC932B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018153E82916225700CC932B /* Assets.xcassets */; };
 		018154A02916225800CC932B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153EC2916225700CC932B /* Roboto-Medium.ttf */; };
 		018154A12916225800CC932B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153ED2916225700CC932B /* Roboto-Light.ttf */; };
 		018154A22916225800CC932B /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153EE2916225700CC932B /* RobotoCondensed-Bold.ttf */; };
@@ -24,7 +24,6 @@
 		018154A62916225800CC932B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153F22916225700CC932B /* Roboto-Bold.ttf */; };
 		018154A72916225800CC932B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153F32916225700CC932B /* Roboto-Thin.ttf */; };
 		018154A82916225800CC932B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 018153F42916225700CC932B /* Roboto-Black.ttf */; };
-		018154A92916225800CC932B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 018153F52916225700CC932B /* Info.plist */; };
 		018154BF2916225800CC932B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018154182916225700CC932B /* Auth.storyboard */; };
 		018154C02916225800CC932B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181541A2916225700CC932B /* LoginVC.swift */; };
 		018154C12916225800CC932B /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181541B2916225700CC932B /* ChangePasswordVC.swift */; };
@@ -45,16 +44,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01757BDE29164249000C31EE /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		018153C829161E3700CC932B /* EmjayGlobal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmjayGlobal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		018153D429161E3800CC932B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		018153D729161E3800CC932B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		018153D929161E3800CC932B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018153E02916225700CC932B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		018153E12916225700CC932B /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		018153E22916225700CC932B /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		018153E42916225700CC932B /* ALF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALF.swift; sourceTree = "<group>"; };
 		018153E52916225700CC932B /* AFN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFN.swift; sourceTree = "<group>"; };
-		018153E82916225700CC932B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		018153EC2916225700CC932B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		018153ED2916225700CC932B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		018153EE2916225700CC932B /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		018153F22916225700CC932B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		018153F32916225700CC932B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		018153F42916225700CC932B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
-		018153F52916225700CC932B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018154182916225700CC932B /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		0181541A2916225700CC932B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0181541B2916225700CC932B /* ChangePasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
@@ -128,8 +125,6 @@
 				018154782916225700CC932B /* Views */,
 				018153F62916225700CC932B /* Modules */,
 				018153E62916225700CC932B /* Resources */,
-				018153D429161E3800CC932B /* Assets.xcassets */,
-				018153D929161E3800CC932B /* Info.plist */,
 			);
 			path = EmjayGlobal;
 			sourceTree = "<group>";
@@ -156,10 +151,10 @@
 		018153E62916225700CC932B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				018153E82916225700CC932B /* Assets.xcassets */,
 				018153D629161E3800CC932B /* LaunchScreen.storyboard */,
+				018153D429161E3800CC932B /* Assets.xcassets */,
 				018153EB2916225700CC932B /* Fonts */,
-				018153F52916225700CC932B /* Info.plist */,
+				01757BDE29164249000C31EE /* info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -443,7 +438,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				018154A92916225800CC932B /* Info.plist in Resources */,
 				018154A72916225800CC932B /* Roboto-Thin.ttf in Resources */,
 				018153D829161E3800CC932B /* LaunchScreen.storyboard in Resources */,
 				018154A82916225800CC932B /* Roboto-Black.ttf in Resources */,
@@ -456,7 +450,7 @@
 				018154A52916225800CC932B /* RobotoCondensed-Regular.ttf in Resources */,
 				018154A02916225800CC932B /* Roboto-Medium.ttf in Resources */,
 				018154A12916225800CC932B /* Roboto-Light.ttf in Resources */,
-				0181549E2916225800CC932B /* Assets.xcassets in Resources */,
+				01757BDF29164249000C31EE /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmjayGlobal/Info.plist;
+				INFOPLIST_FILE = EmjayGlobal/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -700,7 +694,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EmjayGlobal/Info.plist;
+				INFOPLIST_FILE = EmjayGlobal/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

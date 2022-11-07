@@ -53,10 +53,10 @@ class AFN: NSObject {
         manager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Accept")
 
         var headers = [String: String]()
-        if Util.isLoggedIn(){
-            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
-            headers["Authorization"] = "Util.getUser()!.token"
-        }
+//        if Util.isLoggedIn(){
+//            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+//            headers["Authorization"] = "Util.getUser()!.token"
+//        }
 
         manager.post(forMethod, parameters: parameters, headers: headers) { progress in
             
@@ -83,10 +83,10 @@ class AFN: NSObject {
 
         manager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Accept")
         var headers = [String: String]()
-        if Util.isLoggedIn(){
-            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
-            headers["Authorization"] = "Util.getUser()!.token"
-        }
+//        if Util.isLoggedIn(){
+//            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+//            headers["Authorization"] = "Util.getUser()!.token"
+//        }
         
         manager.post(forMethod, parameters: parameters, headers: headers) { progress in
             
@@ -107,10 +107,10 @@ class AFN: NSObject {
 
         manager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Accept")
         var headers = [String: String]()
-        if Util.isLoggedIn(){
-            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
-            headers["Authorization"] = "Util.getUser()!.token"
-        }
+//        if Util.isLoggedIn(){
+//            manager.requestSerializer.setValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+//            headers["Authorization"] = "Util.getUser()!.token"
+//        }
         
         manager.get(forMethod, parameters: parameters, headers: headers) { progress in
             

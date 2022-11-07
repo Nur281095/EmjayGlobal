@@ -36,11 +36,11 @@ class ALF: NSObject {
     private func getMethodWithParams(parameters: Dictionary<String, AnyObject>, forMethod: String, success:@escaping SuccessBlock, fail:@escaping FailureBlock){
         
         var headers: HTTPHeaders?
-        if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.token]
-        } else {
-            headers = [:]
-        }
+//        if Util.isLoggedIn() {
+//            headers = ["Authorization": Util.getUser()!.token]
+//        } else {
+//            headers = [:]
+//        }
 
         let manager = Alamofire.Session.default
         print(headers)
@@ -89,9 +89,9 @@ class ALF: NSObject {
         }
 
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        if Util.isLoggedIn() {
-            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
-        }
+//        if Util.isLoggedIn() {
+//            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+//        }
         //create dataTask using the session object to send data to the server
         let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
 
@@ -147,11 +147,11 @@ class ALF: NSObject {
         manager.session.configuration.timeoutIntervalForRequest = 30
         let headers: HTTPHeaders?
         
-        if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.token]
-        } else {
+//        if Util.isLoggedIn() {
+//            headers = ["Authorization": Util.getUser()!.token]
+//        } else {
             headers = [:]
-        }
+//        }
 //
         manager.upload(
             multipartFormData: { multipartFormData in
@@ -213,12 +213,12 @@ class ALF: NSObject {
         
         let headers: HTTPHeaders?
         
-        if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.token]
-        } else {
+//        if Util.isLoggedIn() {
+//            headers = ["Authorization": Util.getUser()!.token]
+//        } else {
             headers = [:]
-        }
-        
+//        }
+//
         manager.upload(
             multipartFormData: { multipartFormData in
                 print(parameters)

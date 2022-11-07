@@ -9,7 +9,7 @@ import UIKit
 
 class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationControllerDelegate{
     
-    //Designer
+    /*
     let homeVC = UIStoryboard.storyBoard(withName: .home).loadViewController(withIdentifier: .homeVC) as! HomeVC
     let desingVC = UIStoryboard.storyBoard(withName: .designer).loadViewController(withIdentifier: .designerVC) as! DesignerVC
     let orderVC = UIStoryboard.storyBoard(withName: .order).loadViewController(withIdentifier: .ordersVC) as! OrdersVC
@@ -104,6 +104,7 @@ class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationContro
         
         
     }
+     */
     
 }
 
