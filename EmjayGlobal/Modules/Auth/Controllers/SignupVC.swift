@@ -9,49 +9,80 @@ import UIKit
 import AAExtensions
 import SwiftyJSON
 
-class SignupVC: BaseVC {
+class SignupVC: BaseVC, SearchDropDownDelegate {
 
-    @IBOutlet weak var emailTxt: UITextField!
-    @IBOutlet weak var passTxt: UITextField!
     @IBOutlet weak var fNameTxt: UITextField!
-    @IBOutlet weak var lNameTxt: UITextField!
-    @IBOutlet weak var cPassTxt: UITextField!
+    @IBOutlet weak var surNameTxt: UITextField!
+    @IBOutlet weak var address1Txt: UITextField!
+    @IBOutlet weak var address2Txt: UITextField!
+    @IBOutlet weak var conTxt: UITextField!
+    @IBOutlet weak var stateTxt: UITextField!
+    @IBOutlet weak var cityTxt: UITextField!
+    @IBOutlet weak var mobileTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
         
-    @IBOutlet weak var eye: UIImageView!
-    @IBOutlet weak var eye1: UIImageView!
-    @IBOutlet weak var eyeBtn: UIButton!
-    @IBOutlet weak var eyeBtn1: UIButton!
-    
-    @IBOutlet weak var signinBtn: UIButton!
-    @IBOutlet weak var signuoBtn: UIButton!
-    
-    
+    var countries = [CountryModel]()
+    var states = [CountryModel]()
+    var cities = [CountryModel]()
+    var conID = ""
+    var stateID = ""
+    var cityID = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.leftBarButtonItem = btnBack(isOrignal: true)
-        self.navigationController?.isNavigationBarHidden = false
-        self.setupWhiteNav()
+        
     }
     
-    @IBAction func eyeTap(_ sender: UIButton) {
-        if sender.tag == 0 {
-            passTxt.isSecureTextEntry = !passTxt.isSecureTextEntry
-        } else {
-            cPassTxt.isSecureTextEntry = !cPassTxt.isSecureTextEntry
-        }
-    }
-    @IBAction func signInTap(_ sender: Any) {
+    @IBAction func crossTap(_ sender: Any) {
         self.goBack()
     }
-    @IBAction func signUpTap(_ sender: Any) {
-        let emailValid = Validator.validateEmail(text: emailTxt.text)
-        if !emailValid.0 {
-            print(emailValid.1)
-            self.showTool(msg: emailValid.1, state: .error)
+    @IBAction func contTap(_ sender: UIButton) {
+        let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .searchDropDownVC) as! SearchDropDownVC
+        vc.delegate = self
+        vc.countries = self.countries
+        vc.states = self.states
+        vc.cities = self.cities
+        vc.conID = self.conID
+        vc.stateID = self.stateID
+        vc.cityID = self.cityID
+        vc.dataTyp = .country
+        self.show(vc, sender: self)
+    }
+    @IBAction func stateTap(_ sender: UIButton) {
+        if conID == "" {
+            self.showTool(msg: "Please select country!", state: .warning)
             return
         }
-        
+        let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .searchDropDownVC) as! SearchDropDownVC
+        vc.delegate = self
+        vc.countries = self.countries
+        vc.states = self.states
+        vc.cities = self.cities
+        vc.conID = self.conID
+        vc.stateID = self.stateID
+        vc.cityID = self.cityID
+        vc.dataTyp = .state
+        self.show(vc, sender: self)
+    }
+    @IBAction func cityTap(_ sender: UIButton) {
+        if stateID == "" {
+            self.showTool(msg: "Please select state!", state: .warning)
+            return
+        }
+        let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .searchDropDownVC) as! SearchDropDownVC
+        vc.delegate = self
+        vc.countries = self.countries
+        vc.states = self.states
+        vc.cities = self.cities
+        vc.conID = self.conID
+        vc.stateID = self.stateID
+        vc.cityID = self.cityID
+        vc.dataTyp = .city
+        self.show(vc, sender: self)
+    }
+    
+    @IBAction func continueTap(_ sender: Any) {
+
         let fNameValid = Validator.validateString(text: fNameTxt.text, type: "First name")
         if !fNameValid.0 {
             print(fNameValid.1)
@@ -59,65 +90,87 @@ class SignupVC: BaseVC {
             return
         }
         
-        let lNameValid = Validator.validateString(text: fNameTxt.text, type: "Last name")
+        let lNameValid = Validator.validateString(text: surNameTxt.text, type: "Surname")
         if !lNameValid.0 {
             print(lNameValid.1)
             self.showTool(msg: lNameValid.1, state: .error)
             return
         }
         
-        let passValid = Validator.validatePassword(text: passTxt.text)
-        if !passValid.0 {
-            print(passValid.1)
-            self.showTool(msg: passValid.1, state: .error)
+        let conValid = Validator.validateString(text: conTxt.text, type: "Country")
+        if !conValid.0 {
+            print(conValid.1)
+            self.showTool(msg: conValid.1, state: .error)
             return
         }
         
-       
-        if passTxt.text != cPassTxt.text {
-            
-            self.showTool(msg: "Password doesn't match.", state: .error)
+        let stateValid = Validator.validateString(text: stateTxt.text, type: "State")
+        if !stateValid.0 {
+            print(stateValid.1)
+            self.showTool(msg: stateValid.1, state: .error)
             return
         }
         
-        var dic = Dictionary<String, AnyObject>()
+        let cityValid = Validator.validateString(text: cityTxt.text, type: "City")
+        if !cityValid.0 {
+            print(cityValid.1)
+            self.showTool(msg: cityValid.1, state: .error)
+            return
+        }
+        
+        let mobileValid = Validator.validatePhone(text: mobileTxt.text, type: "Mobile")
+        if !(mobileValid).0 {
+            print(mobileValid.1)
+            self.showTool(msg: mobileValid.1, state: .error)
+            return
+        }
+        
+        let emailValid = Validator.validateEmail(text: emailTxt.text)
+        if !emailValid.0 {
+            print(emailValid.1)
+            self.showTool(msg: emailValid.1, state: .error)
+            return
+        }
+
+        var dic = [String: AnyObject]()
         dic["first_name"] = fNameTxt.text as AnyObject
-        dic["last_name"] = lNameTxt.text as AnyObject
+        dic["sur_name"] = surNameTxt.text as AnyObject
         dic["email"] = emailTxt.text as AnyObject
-        dic["password"] = passTxt.text as AnyObject
-        dic["password_confirmation"] = cPassTxt.text as AnyObject
+        dic["mobile"] = mobileTxt.text as AnyObject
+        dic["address"] = address1Txt.text as AnyObject
+        dic["address1"] = address2Txt.text as AnyObject
+        dic["country_id"] = conID as AnyObject
+        dic["state_id"] = stateID as AnyObject
+        dic["city_id"] = cityID as AnyObject
         
-        print(dic)
-        Util.shared.showSpinner()
-        ALF.shared.doPostData(parameters: dic, method: "register") { response in
-            Util.shared.hideSpinner()
-            print(response)
-            DispatchQueue.main.async {
-                let json = JSON(response)
-                if let status = json["status"].int {
-                    if status == 200 {
-                        
-                        if var user = json["data"]["user"].dictionaryObject {
-                            user["token"] = json["data"]["token"].stringValue
-                            if let usrStr = user.aa_json {
-                                DispatchQueue.main.async {
-                                    UserDefaults.standard.set(usrStr, forKey: "user")
-                                    
-                                    SceneDelegate.shared?.checkUserLoggedIn()
-                                }
-                            }
-                        }
-                        
-                    } else {
-                        self.showTool(msg: json["message"].string ?? "", state: .error)
-                    }
-                }
-            }
-            
-        } fail: { response in
-            Util.shared.hideSpinner()
-            print(response)
+        let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .signupIDVC) as! SignupIDVC
+        vc.dic = dic
+        self.show(vc, sender: self)
+    }
+    
+    func didSelectCity(cities: [CountryModel], cityID: String) {
+        if cityID != "" {
+            self.cities = cities
+            self.cityID = cityID
+            self.cityTxt.text = self.cities.filter({$0.isSelected})[0].name
         }
+    }
+    func didSelectState(states: [CountryModel], stateID: String) {
+        self.states = states
+        self.stateID = stateID
+        self.stateTxt.text = self.states.filter({$0.isSelected})[0].name
+    }
+    func didSelectContry(countries: [CountryModel], conID: String) {
+        self.countries = countries
+        self.conID = conID
+        self.conTxt.text = self.countries.filter({$0.isSelected})[0].country
+        
+        self.states.removeAll()
+        self.cities.removeAll()
+        stateID = ""
+        cityID = ""
+        self.stateTxt.text = ""
+        self.cityTxt.text = ""
     }
 
 }

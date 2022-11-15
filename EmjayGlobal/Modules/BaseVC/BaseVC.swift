@@ -80,10 +80,10 @@ class BaseVC: UIViewController {
         appearance.backgroundColor = .white
         appearance.shadowColor = .clear
         
-        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black as Any, NSAttributedString.Key.font: UIFont(name: AppFonts.roboto_medium, size: 25)!]
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(hexString: "#28769A") as Any, NSAttributedString.Key.font: UIFont(name: AppFonts.roboto_medium, size: 25)!]
         self.navigationController?.navigationBar.standardAppearance = appearance
         self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
-        self.navigationController?.navigationBar.tintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor(hexString: "#28769A")
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
     }

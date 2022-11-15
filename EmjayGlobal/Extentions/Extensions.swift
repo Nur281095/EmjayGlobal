@@ -790,3 +790,25 @@ extension UIView {
       self.layer.masksToBounds = false
   }
 }
+
+extension UILabel {
+    var spasing:CGFloat {
+        get {return 0}
+        set {
+            let textAlignment = self.textAlignment
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.lineSpacing = newValue
+            let attributedString = NSAttributedString(string: self.text ?? "", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
+            self.attributedText = attributedString
+            self.textAlignment = textAlignment
+        }
+    }
+}
+
+extension UINavigationController {
+  func popToViewController(ofClass: AnyClass, animated: Bool = true) {
+    if let vc = viewControllers.last(where: { $0.isKind(of: ofClass) }) {
+      popToViewController(vc, animated: animated)
+    }
+  }
+}

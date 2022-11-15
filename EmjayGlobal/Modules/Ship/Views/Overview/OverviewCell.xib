@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OverviewCell" rowHeight="121" id="KGk-i7-Jjw" customClass="OverviewCell" customModule="EmjayGlobal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CRH-GN-GzN">
+                        <rect key="frame" x="5" y="5" width="343" height="111"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-zE-4N2">
+                                <rect key="frame" x="10" y="10" width="37.333333333333336" height="15"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="On its way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LT-CX-Ubc">
+                                <rect key="frame" x="52.333333333333343" y="8" width="74" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Barcelona, ES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehO-Xh-5Aq">
+                                <rect key="frame" x="10" y="46" width="144.66666666666666" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Nairobi, KE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCe-6y-CGn">
+                                <rect key="frame" x="188.66666666666663" y="46" width="144.33333333333337" height="19"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="textColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_rigth" translatesAutoresizingMaskIntoConstraints="NO" id="30K-g0-Wtw">
+                                <rect key="frame" x="164.66666666666666" y="48.666666666666664" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="2hv-v8-aXZ"/>
+                                    <constraint firstAttribute="width" constant="14" id="a1m-Jy-PiW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated arrival date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-4s-FKt">
+                                <rect key="frame" x="10" y="84" width="117" height="15"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Aug 2022, 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-WT-XIY">
+                                <rect key="frame" x="133" y="84" width="98" height="15"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.30588235294117649" green="0.078431372549019607" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vCe-6y-CGn" firstAttribute="centerY" secondItem="30K-g0-Wtw" secondAttribute="centerY" id="5O8-wl-BE5"/>
+                            <constraint firstAttribute="trailing" secondItem="vCe-6y-CGn" secondAttribute="trailing" constant="10" id="5n6-vO-PHb"/>
+                            <constraint firstItem="4LT-CX-Ubc" firstAttribute="centerY" secondItem="wRv-zE-4N2" secondAttribute="centerY" id="94A-0q-SxT"/>
+                            <constraint firstItem="VvM-4s-FKt" firstAttribute="leading" secondItem="CRH-GN-GzN" secondAttribute="leading" constant="10" id="CR5-kt-c52"/>
+                            <constraint firstItem="ehO-Xh-5Aq" firstAttribute="centerY" secondItem="30K-g0-Wtw" secondAttribute="centerY" id="E1U-Wm-PEG"/>
+                            <constraint firstItem="30K-g0-Wtw" firstAttribute="leading" secondItem="ehO-Xh-5Aq" secondAttribute="trailing" constant="10" id="MUJ-6X-MmB"/>
+                            <constraint firstItem="bzV-WT-XIY" firstAttribute="leading" secondItem="VvM-4s-FKt" secondAttribute="trailing" constant="6" id="OTo-QK-Kat"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4LT-CX-Ubc" secondAttribute="trailing" constant="15" id="PcJ-RX-sYv"/>
+                            <constraint firstItem="ehO-Xh-5Aq" firstAttribute="leading" secondItem="CRH-GN-GzN" secondAttribute="leading" constant="10" id="VRY-Kd-eDl"/>
+                            <constraint firstItem="4LT-CX-Ubc" firstAttribute="leading" secondItem="wRv-zE-4N2" secondAttribute="trailing" constant="5" id="aBL-Nd-kp1"/>
+                            <constraint firstItem="30K-g0-Wtw" firstAttribute="centerX" secondItem="CRH-GN-GzN" secondAttribute="centerX" id="amv-Gb-3sX"/>
+                            <constraint firstItem="wRv-zE-4N2" firstAttribute="leading" secondItem="CRH-GN-GzN" secondAttribute="leading" constant="10" id="cKI-BV-AON"/>
+                            <constraint firstItem="bzV-WT-XIY" firstAttribute="centerY" secondItem="VvM-4s-FKt" secondAttribute="centerY" id="g7U-GZ-NPN"/>
+                            <constraint firstItem="30K-g0-Wtw" firstAttribute="centerY" secondItem="CRH-GN-GzN" secondAttribute="centerY" id="orI-4c-Ygx"/>
+                            <constraint firstItem="vCe-6y-CGn" firstAttribute="leading" secondItem="30K-g0-Wtw" secondAttribute="trailing" constant="10" id="p93-1P-8F3"/>
+                            <constraint firstItem="VvM-4s-FKt" firstAttribute="top" secondItem="ehO-Xh-5Aq" secondAttribute="bottom" constant="19" id="r1F-Gv-qqy"/>
+                            <constraint firstItem="wRv-zE-4N2" firstAttribute="top" secondItem="CRH-GN-GzN" secondAttribute="top" constant="10" id="vSV-up-lat"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CRH-GN-GzN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="9eq-Qi-bUm"/>
+                    <constraint firstAttribute="trailing" secondItem="CRH-GN-GzN" secondAttribute="trailing" constant="5" id="9uv-Sc-DUt"/>
+                    <constraint firstAttribute="bottom" secondItem="CRH-GN-GzN" secondAttribute="bottom" constant="5" id="aGq-Uv-RAo"/>
+                    <constraint firstItem="CRH-GN-GzN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="iud-Kx-y2J"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="city1" destination="ehO-Xh-5Aq" id="aGk-zB-ic0"/>
+                <outlet property="city2" destination="vCe-6y-CGn" id="swp-6H-Sh7"/>
+                <outlet property="date" destination="bzV-WT-XIY" id="kT2-3e-iDK"/>
+                <outlet property="statusLbl" destination="4LT-CX-Ubc" id="dIh-eD-JnC"/>
+            </connections>
+            <point key="canvasLocation" x="126.92307692307692" y="65.758293838862556"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_rigth" width="12" height="11"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

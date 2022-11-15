@@ -20,7 +20,7 @@ class ALF: NSObject {
 
     private func urlString(subUrl: String) -> String {
     
-        return "https://eyecarebrands.com/api/\(subUrl)"
+        return "https://project.cyphersol.com/emj/emjApi/\(subUrl)"
         
     }
     
@@ -36,11 +36,11 @@ class ALF: NSObject {
     private func getMethodWithParams(parameters: Dictionary<String, AnyObject>, forMethod: String, success:@escaping SuccessBlock, fail:@escaping FailureBlock){
         
         var headers: HTTPHeaders?
-//        if Util.isLoggedIn() {
-//            headers = ["Authorization": Util.getUser()!.token]
-//        } else {
-//            headers = [:]
-//        }
+        if Util.isLoggedIn() {
+            headers = ["Authorization": Util.getUser()!.accessToken]
+        } else {
+            headers = [:]
+        }
 
         let manager = Alamofire.Session.default
         print(headers)
@@ -76,57 +76,80 @@ class ALF: NSObject {
     
     private func postMethodWithParams(parameters: Dictionary<String, AnyObject>, forMethod: String, success:@escaping SuccessBlock, fail:@escaping FailureBlock){
 
-        let session = URLSession.shared
-
-        //now create the URLRequest object using the url object
-        var request = URLRequest(url: URL(string: forMethod)!)
-        request.httpMethod = "POST" //set http method as POST
-        request.timeoutInterval = 30
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: []) // pass dictionary to nsdata object and set it as request body
-        } catch let error {
-            print(error.localizedDescription)
-        }
-
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        if Util.isLoggedIn() {
-//            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+//        let session = URLSession.shared
+//
+//        //now create the URLRequest object using the url object
+//        var request = URLRequest(url: URL(string: forMethod)!)
+//        request.httpMethod = "POST" //set http method as POST
+//        request.timeoutInterval = 30
+//        do {
+//            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: []) // pass dictionary to nsdata object and set it as request body
+//        } catch let error {
+//            print(error.localizedDescription)
 //        }
-        //create dataTask using the session object to send data to the server
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-
-            guard error == nil else {
-                fail(error!.localizedDescription as AnyObject)
-                return
-            }
-
-            guard let data = data else {
-                print(String(describing: error))
-                fail("Data not found" as AnyObject)
-                
-                return
-            }
-            
-              print(String(data: data, encoding: .utf8)!)
-            do {
-
-                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                    // handle json...
-                    let jsonObj = JSON(json)
-                    let status_code = jsonObj["status"].intValue
-                    let message = jsonObj["message"].stringValue
-                    if (200 ... 299).contains(status_code) {
-                        success(json as AnyObject)
-                    } else {
-                        fail(message as AnyObject)
-                    }
+//
+//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+////        if Util.isLoggedIn() {
+////            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+////        }
+//        //create dataTask using the session object to send data to the server
+//        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
+//
+//            guard error == nil else {
+//                fail(error!.localizedDescription as AnyObject)
+//                return
+//            }
+//
+//            guard let data = data else {
+//                print(String(describing: error))
+//                fail("Data not found" as AnyObject)
+//
+//                return
+//            }
+//
+//              print(String(data: data, encoding: .utf8)!)
+//            do {
+//
+//                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+//                    // handle json...
+//                    let jsonObj = JSON(json)
+//                    let status_code = jsonObj["status"].intValue
+//                    let message = jsonObj["message"].stringValue
+//                    if (200 ... 299).contains(status_code) {
+//                        success(json as AnyObject)
+//                    } else {
+//                        fail(message as AnyObject)
+//                    }
+//                }
+//            } catch let error {
+//                fail(error.localizedDescription as AnyObject)
+//            }
+//
+//        })
+//        task.resume()
+        
+        var headers: HTTPHeaders?
+        let manager = Alamofire.Session.default
+        if Util.isLoggedIn() {
+            headers = ["Authorization": Util.getUser()!.accessToken]
+        } else {
+            headers = [:]
+        }
+        print(headers)
+        manager.session.configuration.timeoutIntervalForRequest = 30
+        print(parameters)
+        manager.request(forMethod, method: .post, parameters: parameters, headers: headers).responseJSON { response in
+            print(parameters)
+            switch response.result {
+            case .success:
+                if response.value != nil{
+                    success(response.value as AnyObject)
                 }
-            } catch let error {
-                fail(error.localizedDescription as AnyObject)
+            case let .failure(error):
+                print(error)
+                fail(error as AnyObject)
             }
-
-        })
-        task.resume()
+        }
         
     }
     /******************* END OF POST Method with PARAMS **********************/
@@ -147,12 +170,11 @@ class ALF: NSObject {
         manager.session.configuration.timeoutIntervalForRequest = 30
         let headers: HTTPHeaders?
         
-//        if Util.isLoggedIn() {
-//            headers = ["Authorization": Util.getUser()!.token]
-//        } else {
+        if Util.isLoggedIn() {
+            headers = ["Authorization": Util.getUser()!.accessToken]
+        } else {
             headers = [:]
-//        }
-//
+        }
         manager.upload(
             multipartFormData: { multipartFormData in
                 print(parameters)
@@ -213,11 +235,11 @@ class ALF: NSObject {
         
         let headers: HTTPHeaders?
         
-//        if Util.isLoggedIn() {
-//            headers = ["Authorization": Util.getUser()!.token]
-//        } else {
+        if Util.isLoggedIn() {
+            headers = ["Authorization": Util.getUser()!.accessToken]
+        } else {
             headers = [:]
-//        }
+        }
 //
         manager.upload(
             multipartFormData: { multipartFormData in

@@ -29,13 +29,9 @@ extension UIStoryboard {
 enum storyboards : String {
     case auth = "Auth",
          home = "Home",
-         designer = "Designer",
-         order = "Order",
-         notification = "Notification",
-         more = "More",
-         cart = "Cart",
-         profile = "Profile",
-         filter = "Filter"
+         book = "Book",
+         ship = "Ship",
+         invoice = "Invoice"
 }
 
 enum viewControllers: String {
@@ -43,26 +39,13 @@ enum viewControllers: String {
     //Main Storyboard
     case loginVC = "LoginVC",
          signupVC = "SignupVC",
+         signupIDVC = "SignupIDVC",
+         termsAcceptVC = "TermsAcceptVC",
+         welcomeVC = "WelcomeVC",
          homeVC = "HomeVC",
-         designerVC = "DesignerVC",
-         ordersVC = "OrdersVC",
-         notificationsVC = "NotificationsVC",
-         moreVC = "MoreVC",
-         filterVC = "FilterVC",
-         seeAllVC = "SeeAllVC",
-         cartVC = "CartVC",
-         addAddressVC = "AddAddressVC",
-         selectCardVC = "SelectCardVC",
-         checkoutVC = "CheckoutVC",
-         thankuVC = "ThankuVC",
-         orderDetailVC = "OrderDetailVC",
-         favoriteVC = "FavoriteVC",
-         profileVC = "ProfileVC",
-         editProfileVC = "EditProfileVC",
-         settingVC = "SettingVC",
-         webVC = "WebVC",
-         productDetailVC = "ProductDetailVC",
-         moreDetailVC = "MoreDetailVC",
-         filterLargeVC = "FilterLargeVC",
-         changePasswordVC = "ChangePasswordVC"
+         bookVC = "BookVC",
+         shipVC = "ShipVC",
+         invoiceVC = "InvoiceVC",
+         changePasswordVC = "ChangePasswordVC",
+         searchDropDownVC = "SearchDropDownVC"
 }

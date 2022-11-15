@@ -24,7 +24,7 @@ class AFN: NSObject {
    
     private func urlString(subUrl: String) -> String {
         
-        return "https://eyecarebrands.com/api/\(subUrl)"
+        return "https://project.cyphersol.com/emj/emjApi/\(subUrl)"
         
        
     }

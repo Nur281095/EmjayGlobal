@@ -9,12 +9,12 @@ import UIKit
 
 class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationControllerDelegate{
     
-    /*
+    
     let homeVC = UIStoryboard.storyBoard(withName: .home).loadViewController(withIdentifier: .homeVC) as! HomeVC
-    let desingVC = UIStoryboard.storyBoard(withName: .designer).loadViewController(withIdentifier: .designerVC) as! DesignerVC
-    let orderVC = UIStoryboard.storyBoard(withName: .order).loadViewController(withIdentifier: .ordersVC) as! OrdersVC
-    let notVC = UIStoryboard.storyBoard(withName: .notification).loadViewController(withIdentifier: .notificationsVC) as! NotificationsVC
-    let moreVC = UIStoryboard.storyBoard(withName: .more).loadViewController(withIdentifier: .moreVC) as! MoreVC
+    let bookVC = UIStoryboard.storyBoard(withName: .book).loadViewController(withIdentifier: .bookVC) as! BookVC
+    let shipVC = UIStoryboard.storyBoard(withName: .ship).loadViewController(withIdentifier: .shipVC) as! ShipVC
+    let invoiceVC = UIStoryboard.storyBoard(withName: .invoice).loadViewController(withIdentifier: .invoiceVC) as! InvoiceVC
+    
     
     
     init() {
@@ -24,28 +24,23 @@ class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationContro
         
         /********************* For home Tab *********************/
         
-        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), selectedImage: UIImage(named: "ic_home_active"))
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), selectedImage: UIImage(named: "ic_home")?.withTintColor(UIColor(hexString: "#28769A")))
         homeVC.tabBarItem.tag = 0
         let homeNav = UINavigationController(rootViewController: homeVC)
         
-        desingVC.tabBarItem = UITabBarItem(title: "Designers", image: UIImage(named: "ic_design"), selectedImage: UIImage(named: "ic_design_active"))
-        desingVC.tabBarItem.tag = 1
-        let desingNav = UINavigationController(rootViewController: desingVC)
+        bookVC.tabBarItem = UITabBarItem(title: "Book", image: UIImage(named: "ic_book"), selectedImage: UIImage(named: "ic_book")?.withTintColor(UIColor(hexString: "#28769A")))
+        bookVC.tabBarItem.tag = 1
+        let bookNav = UINavigationController(rootViewController: bookVC)
         
-        orderVC.tabBarItem = UITabBarItem(title: "My Orders", image: UIImage(named: "ic_my_order"), selectedImage: UIImage(named: "ic_my_order_active"))
-        orderVC.tabBarItem.tag = 2
-        let orderNav = UINavigationController(rootViewController: orderVC)
+        shipVC.tabBarItem = UITabBarItem(title: "Shipments", image: UIImage(named: "ic_ship"), selectedImage: UIImage(named: "ic_ship")?.withTintColor(UIColor(hexString: "#28769A")))
+        shipVC.tabBarItem.tag = 2
+        let shipNav = UINavigationController(rootViewController: shipVC)
         
-        notVC.tabBarItem = UITabBarItem(title: "Notifications", image: UIImage(named: "ic_notification"), selectedImage: UIImage(named: "ic_notification_active"))
-        notVC.tabBarItem.tag = 3
-        let notNav = UINavigationController(rootViewController: notVC)
+        invoiceVC.tabBarItem = UITabBarItem(title: "Invoices", image: UIImage(named: "ic_invoice"), selectedImage: UIImage(named: "ic_invoice")?.withTintColor(UIColor(hexString: "#28769A")))
+        invoiceVC.tabBarItem.tag = 3
+        let invoiceNav = UINavigationController(rootViewController: invoiceVC)
         
-        
-        moreVC.tabBarItem = UITabBarItem(title: "More", image: UIImage(named: "ic_more"), selectedImage: UIImage(named: "ic_more_active"))
-        moreVC.tabBarItem.tag = 4
-        let moreNav = UINavigationController(rootViewController: moreVC)
-       
-        viewControllers = [homeNav,desingNav,orderNav,notNav, moreNav]
+        viewControllers = [homeNav,bookNav,shipNav, invoiceNav]
         
     }
     
@@ -61,14 +56,14 @@ class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationContro
         self.delegate = self
         self.tabBar.isTranslucent = false
         
-        self.tabBar.barTintColor = UIColor(hexString: "#F9F9F9")
-        self.tabBar.tintColor = UIColor(hexString: "#0E9CEA")
-        self.tabBar.backgroundColor = UIColor(hexString: "#FFFFFF")
-        self.tabBar.unselectedItemTintColor = UIColor(hexString: "#666F80")
+        self.tabBar.barTintColor = UIColor(hexString: "#F7F7F7")
+        self.tabBar.tintColor = UIColor(hexString: "#28769A")
+        self.tabBar.backgroundColor = UIColor(hexString: "#F7F7F7")
+        self.tabBar.unselectedItemTintColor = UIColor(hexString: "#747474")
         
-        self.tabBar.layer.masksToBounds = true
-        self.tabBar.layer.cornerRadius = 20
-        self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+//        self.tabBar.layer.masksToBounds = true
+//        self.tabBar.layer.cornerRadius = 20
+//        self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
 //        UITabBar.appearance().shadowImage = UIImage()
 //        UITabBar.appearance().backgroundImage = UIImage()
@@ -104,7 +99,7 @@ class TabbarVC: UITabBarController,UITabBarControllerDelegate,UINavigationContro
         
         
     }
-     */
+     
     
 }
 

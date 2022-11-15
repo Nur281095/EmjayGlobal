@@ -12,24 +12,25 @@ class Util: NSObject
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-    
+    var isGuest = false
+    var isTerm = false
    
-//    class func isLoggedIn() -> Bool {
-//        if self.getUser() != nil {
-//            return true
-//        } else {
-//            return false
-//        }
-//    }
-//    class func getUser() -> User?{
-//        if let usrStr = UserDefaults.standard.object(forKey: "user") as? String {
-//            if let userJson = usrStr.aa_toJson {
-//                let usr = User(fromDictionary: userJson)
-//                return usr
-//            }
-//        }
-//        return nil
-//    }
+    class func isLoggedIn() -> Bool {
+        if self.getUser() != nil {
+            return true
+        } else {
+            return false
+        }
+    }
+    class func getUser() -> User?{
+        if let usrStr = UserDefaults.standard.object(forKey: "user") as? String {
+            if let userJson = usrStr.aa_toJson {
+                let usr = User(fromDictionary: userJson)
+                return usr
+            }
+        }
+        return nil
+    }
     class func logout() {
         DispatchQueue.main.async {
             let domain = Bundle.main.bundleIdentifier!
@@ -110,7 +111,7 @@ class Util: NSObject
        
         let window = SceneDelegate.shared?.window
         
-        loadingView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
+        loadingView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         
         loadingView.clipsToBounds = true
         loadingView.layer.cornerRadius = 10
@@ -154,7 +155,7 @@ class Util: NSObject
                 layer.removeFromSuperlayer()
             }
         }
-        gradientLayer.colors = [UIColor(hexString: "#1A9CEA").cgColor, UIColor(hexString: "#020207").cgColor]
+        gradientLayer.colors = [UIColor(hexString: "#28769A").cgColor, UIColor(hexString: "#28769A").cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.locations = [0, 1]

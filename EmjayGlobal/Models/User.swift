@@ -9,104 +9,102 @@ import UIKit
 
 class User: NSObject, NSCoding{
     
+    var accessToken : String!
     var email : String!
-    var firstName : String!
-    var fullName : String!
-    var id : Int!
-    var lastName : String!
-    var token : String!
-    var status : Int!
-    var points : Int!
-    
-    
+    var mobile : String!
+    var name : String!
+    var profilePic : String!
+    var referalCode : String!
+    var userId : String!
+
+
     /**
      * Instantiate the instance using the passed dictionary values to set the properties values
      */
     init(fromDictionary dictionary: [String:Any]){
+        accessToken = dictionary["access_token"] as? String
         email = dictionary["email"] as? String
-        firstName = dictionary["first_name"] as? String
-        fullName = dictionary["full_name"] as? String
-        id = dictionary["id"] as? Int
-        lastName = dictionary["last_name"] as? String
-        token = dictionary["token"] as? String
-        status = dictionary["status"] as? Int
-        points = dictionary["points"] as? Int
+        mobile = dictionary["mobile"] as? String
+        name = dictionary["name"] as? String
+        profilePic = dictionary["profilePic"] as? String
+        referalCode = dictionary["referal_code"] as? String
+        userId = dictionary["user_id"] as? String
     }
-    
+
     /**
      * Returns all the available property values in the form of [String:Any] object where the key is the approperiate json key and the value is the value of the corresponding property
      */
     func toDictionary() -> [String:Any]
     {
         var dictionary = [String:Any]()
+        if accessToken != nil{
+            dictionary["access_token"] = accessToken
+        }
         if email != nil{
             dictionary["email"] = email
         }
-        if firstName != nil{
-            dictionary["first_name"] = firstName
+        if mobile != nil{
+            dictionary["mobile"] = mobile
         }
-        if fullName != nil{
-            dictionary["full_name"] = fullName
+        if name != nil{
+            dictionary["name"] = name
         }
-        if id != nil{
-            dictionary["id"] = id
+        if profilePic != nil{
+            dictionary["profilePic"] = profilePic
         }
-        if lastName != nil{
-            dictionary["last_name"] = lastName
+        if referalCode != nil{
+            dictionary["referal_code"] = referalCode
         }
-        if token != nil{
-            dictionary["token"] = token
-        }
-        if status != nil{
-            dictionary["status"] = status
+        if userId != nil{
+            dictionary["user_id"] = userId
         }
         return dictionary
     }
-    
+
     /**
-     * NSCoding required initializer.
-     * Fills the data from the passed decoder
-     */
+    * NSCoding required initializer.
+    * Fills the data from the passed decoder
+    */
     @objc required init(coder aDecoder: NSCoder)
     {
-        email = aDecoder.decodeObject(forKey: "email") as? String
-        firstName = aDecoder.decodeObject(forKey: "first_name") as? String
-        fullName = aDecoder.decodeObject(forKey: "full_name") as? String
-        id = aDecoder.decodeObject(forKey: "id") as? Int
-        lastName = aDecoder.decodeObject(forKey: "last_name") as? String
-        token = aDecoder.decodeObject(forKey: "token") as? String
-        status = aDecoder.decodeObject(forKey: "status") as? Int
-        
+         accessToken = aDecoder.decodeObject(forKey: "access_token") as? String
+         email = aDecoder.decodeObject(forKey: "email") as? String
+         mobile = aDecoder.decodeObject(forKey: "mobile") as? String
+         name = aDecoder.decodeObject(forKey: "name") as? String
+         profilePic = aDecoder.decodeObject(forKey: "profilePic") as? String
+         referalCode = aDecoder.decodeObject(forKey: "referal_code") as? String
+         userId = aDecoder.decodeObject(forKey: "user_id") as? String
+
     }
-    
+
     /**
-     * NSCoding required method.
-     * Encodes mode properties into the decoder
-     */
+    * NSCoding required method.
+    * Encodes mode properties into the decoder
+    */
     @objc func encode(with aCoder: NSCoder)
     {
+        if accessToken != nil{
+            aCoder.encode(accessToken, forKey: "access_token")
+        }
         if email != nil{
             aCoder.encode(email, forKey: "email")
         }
-        if firstName != nil{
-            aCoder.encode(firstName, forKey: "first_name")
+        if mobile != nil{
+            aCoder.encode(mobile, forKey: "mobile")
         }
-        if fullName != nil{
-            aCoder.encode(fullName, forKey: "full_name")
+        if name != nil{
+            aCoder.encode(name, forKey: "name")
         }
-        if id != nil{
-            aCoder.encode(id, forKey: "id")
+        if profilePic != nil{
+            aCoder.encode(profilePic, forKey: "profilePic")
         }
-        if lastName != nil{
-            aCoder.encode(lastName, forKey: "last_name")
+        if referalCode != nil{
+            aCoder.encode(referalCode, forKey: "referal_code")
         }
-        if token != nil{
-            aCoder.encode(lastName, forKey: "token")
+        if userId != nil{
+            aCoder.encode(userId, forKey: "user_id")
         }
-        if status != nil{
-            aCoder.encode(status, forKey: "status")
-        }
-        
+
     }
-    
+
 }

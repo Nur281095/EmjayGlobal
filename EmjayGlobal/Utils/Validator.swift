@@ -38,6 +38,18 @@ class Validator: NSObject {
         
         return (true, "Password is vaild.")
     }
+    
+    class func validatePhone(text: String?, type: String) -> (Bool, String){
+        if text == nil || text?.count == 0 {
+            return (false, "\(type) is required.")
+        }
+        if text!.count < 10 {
+            return (false, "\(type) is not valid.")
+        }
+        
+        return (true, "\(type) is vaild.")
+    }
+    
     class func validateString(text: String?, type: String) -> (Bool, String){
         if text == nil || text?.count == 0 {
             return (false, "\(type) is required.")
