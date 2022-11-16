@@ -31,7 +31,9 @@ enum storyboards : String {
          home = "Home",
          book = "Book",
          ship = "Ship",
-         invoice = "Invoice"
+         invoice = "Invoice",
+         track = "Track",
+         profile = "Profile"
 }
 
 enum viewControllers: String {
@@ -47,5 +49,9 @@ enum viewControllers: String {
          shipVC = "ShipVC",
          invoiceVC = "InvoiceVC",
          changePasswordVC = "ChangePasswordVC",
-         searchDropDownVC = "SearchDropDownVC"
+         searchDropDownVC = "SearchDropDownVC",
+         trackVC = "TrackVC",
+         profileVC = "ProfileVC",
+         transactionHistoryVC = "TransactionHistoryVC",
+         transactionDetailVC = "TransactionDetailVC"
 }

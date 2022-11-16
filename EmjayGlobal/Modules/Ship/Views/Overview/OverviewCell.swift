@@ -9,6 +9,7 @@ import UIKit
 
 class OverviewCell: UITableViewCell {
     
+    @IBOutlet weak var shadV: UIView!
     @IBOutlet weak var statusLbl: UILabel!
     @IBOutlet weak var city1: UILabel!
     @IBOutlet weak var city2: UILabel!
@@ -23,6 +24,13 @@ class OverviewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configCell(model: ShipmentModel) {
+        statusLbl.text = model.shipmentStatus
+        city1.text = model.shipmentFrom
+        city2.text = model.shipmentTo
+        date.text = model.shipmentDate
     }
     
 }

@@ -44,10 +44,18 @@
 		01097ABC291A368500CD52B6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB3291A368500CD52B6 /* Roboto-Bold.ttf */; };
 		01097ABD291A368500CD52B6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */; };
 		01097ABE291A368500CD52B6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB5291A368500CD52B6 /* Roboto-Black.ttf */; };
+		01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01171D702924D09300D63471 /* TransactionDetailVC.swift */; };
+		014C064E2924C22500BF79EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014C064D2924C22500BF79EA /* Profile.storyboard */; };
+		014C06502924C24F00BF79EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C064F2924C24F00BF79EA /* ProfileVC.swift */; };
 		0156949A291A3C4800461042 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01569499291A3C4800461042 /* Roboto-Light.ttf */; };
 		0156949C291A3CC800461042 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156949B291A3CC800461042 /* WelcomeVC.swift */; };
 		0178C760291A35290088ADCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0178C75F291A35290088ADCE /* Assets.xcassets */; };
 		0178C763291A35290088ADCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0178C761291A35290088ADCE /* LaunchScreen.storyboard */; };
+		01791E8329237E02008E4A28 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8229237E02008E4A28 /* InvoiceModel.swift */; };
+		01791E85292386AC008E4A28 /* ShipmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E84292386AC008E4A28 /* ShipmentModel.swift */; };
+		01791E8C2923897A008E4A28 /* Track.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01791E8B2923897A008E4A28 /* Track.storyboard */; };
+		01791E8E29238993008E4A28 /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8D29238993008E4A28 /* TrackVC.swift */; };
+		01791E90292389B4008E4A28 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8F292389B4008E4A28 /* TrackCell.swift */; };
 		01996940291B75F600926570 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0199693F291B75F600926570 /* Book.storyboard */; };
 		01996942291B760100926570 /* Ship.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01996941291B760100926570 /* Ship.storyboard */; };
 		01996944291B760E00926570 /* Invoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01996943291B760E00926570 /* Invoice.storyboard */; };
@@ -55,6 +63,9 @@
 		01996948291B763100926570 /* ShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01996947291B763100926570 /* ShipVC.swift */; };
 		0199694A291B763B00926570 /* BookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01996949291B763B00926570 /* BookVC.swift */; };
 		0199694C291B76D000926570 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0199694B291B76D000926570 /* HomeVC.swift */; };
+		019A7449292372AF00E063F2 /* InvoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A7448292372AF00E063F2 /* InvoiceCell.swift */; };
+		01B54ECF2924CA5A0064B20F /* TransactionHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B54ECE2924CA5A0064B20F /* TransactionHistoryVC.swift */; };
+		01B54ED12924CA770064B20F /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B54ED02924CA770064B20F /* TransactionCell.swift */; };
 		01C66D75291CDC8000009733 /* SearchDropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C66D74291CDC8000009733 /* SearchDropDownVC.swift */; };
 		01C66D78291CDFAD00009733 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C66D77291CDFAD00009733 /* CountryModel.swift */; };
 		01E42846291B698B004998F2 /* SignupIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E42845291B698B004998F2 /* SignupIDVC.swift */; };
@@ -99,12 +110,20 @@
 		01097AB3291A368500CD52B6 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		01097AB5291A368500CD52B6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		01171D702924D09300D63471 /* TransactionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailVC.swift; sourceTree = "<group>"; };
+		014C064D2924C22500BF79EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		014C064F2924C24F00BF79EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		01569499291A3C4800461042 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../../../Downloads/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		0156949B291A3CC800461042 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		0178C753291A35260088ADCE /* EmjayGlobal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmjayGlobal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0178C75F291A35290088ADCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0178C762291A35290088ADCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0178C764291A35290088ADCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01791E8229237E02008E4A28 /* InvoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceModel.swift; sourceTree = "<group>"; };
+		01791E84292386AC008E4A28 /* ShipmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipmentModel.swift; sourceTree = "<group>"; };
+		01791E8B2923897A008E4A28 /* Track.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Track.storyboard; sourceTree = "<group>"; };
+		01791E8D29238993008E4A28 /* TrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
+		01791E8F292389B4008E4A28 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		0199693F291B75F600926570 /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		01996941291B760100926570 /* Ship.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ship.storyboard; sourceTree = "<group>"; };
 		01996943291B760E00926570 /* Invoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invoice.storyboard; sourceTree = "<group>"; };
@@ -112,6 +131,9 @@
 		01996947291B763100926570 /* ShipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipVC.swift; sourceTree = "<group>"; };
 		01996949291B763B00926570 /* BookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookVC.swift; sourceTree = "<group>"; };
 		0199694B291B76D000926570 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		019A7448292372AF00E063F2 /* InvoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceCell.swift; sourceTree = "<group>"; };
+		01B54ECE2924CA5A0064B20F /* TransactionHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryVC.swift; sourceTree = "<group>"; };
+		01B54ED02924CA770064B20F /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		01C66D74291CDC8000009733 /* SearchDropDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDropDownVC.swift; sourceTree = "<group>"; };
 		01C66D77291CDFAD00009733 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		01E42845291B698B004998F2 /* SignupIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupIDVC.swift; sourceTree = "<group>"; };
@@ -162,6 +184,8 @@
 		01097A65291A364300CD52B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				014C06482924C20200BF79EA /* Profile */,
+				01791E8629238952008E4A28 /* Track */,
 				01996932291B759600926570 /* Invoice */,
 				01996931291B759000926570 /* Ship */,
 				01996930291B758300926570 /* Book */,
@@ -401,6 +425,50 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		014C06482924C20200BF79EA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				014C064C2924C21800BF79EA /* Views */,
+				014C064B2924C21300BF79EA /* Model */,
+				014C064A2924C20E00BF79EA /* Controller */,
+				014C06492924C20900BF79EA /* UI */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		014C06492924C20900BF79EA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				014C064D2924C22500BF79EA /* Profile.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		014C064A2924C20E00BF79EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				014C064F2924C24F00BF79EA /* ProfileVC.swift */,
+				01B54ECE2924CA5A0064B20F /* TransactionHistoryVC.swift */,
+				01171D702924D09300D63471 /* TransactionDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		014C064B2924C21300BF79EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		014C064C2924C21800BF79EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01B54ED02924CA770064B20F /* TransactionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0178C74A291A35260088ADCE = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +501,48 @@
 				01097AAB291A365100CD52B6 /* Resources */,
 			);
 			path = EmjayGlobal;
+			sourceTree = "<group>";
+		};
+		01791E8629238952008E4A28 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				01791E8A2923896D008E4A28 /* Views */,
+				01791E8929238968008E4A28 /* Model */,
+				01791E8829238962008E4A28 /* Controller */,
+				01791E872923895B008E4A28 /* UI */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		01791E872923895B008E4A28 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				01791E8B2923897A008E4A28 /* Track.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		01791E8829238962008E4A28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01791E8D29238993008E4A28 /* TrackVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		01791E8929238968008E4A28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01791E8A2923896D008E4A28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				01791E8F292389B4008E4A28 /* TrackCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		01996930291B758300926570 /* Book */ = {
@@ -533,6 +643,7 @@
 		0199693B291B75D400926570 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01791E84292386AC008E4A28 /* ShipmentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -550,6 +661,7 @@
 		0199693D291B75DD00926570 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				01791E8229237E02008E4A28 /* InvoiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -557,6 +669,7 @@
 		0199693E291B75E200926570 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				019A7448292372AF00E063F2 /* InvoiceCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -658,10 +771,12 @@
 				01097ABC291A368500CD52B6 /* Roboto-Bold.ttf in Resources */,
 				0178C760291A35290088ADCE /* Assets.xcassets in Resources */,
 				01097AB8291A368500CD52B6 /* RobotoCondensed-Bold.ttf in Resources */,
+				014C064E2924C22500BF79EA /* Profile.storyboard in Resources */,
 				01097ABA291A368500CD52B6 /* Roboto-Regular.ttf in Resources */,
 				01097ABD291A368500CD52B6 /* Roboto-Thin.ttf in Resources */,
 				01097ABE291A368500CD52B6 /* Roboto-Black.ttf in Resources */,
 				01097A95291A364300CD52B6 /* Auth.storyboard in Resources */,
+				01791E8C2923897A008E4A28 /* Track.storyboard in Resources */,
 				01097ABB291A368500CD52B6 /* RobotoCondensed-Regular.ttf in Resources */,
 				01059A79291CBD5900F846D0 /* TransportPlanCell.xib in Resources */,
 				01097A94291A364300CD52B6 /* Home.storyboard in Resources */,
@@ -718,6 +833,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				01097AA6291A364300CD52B6 /* AppStoryboards.swift in Sources */,
+				01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */,
+				01B54ECF2924CA5A0064B20F /* TransactionHistoryVC.swift in Sources */,
 				01059A73291CBCFD00F846D0 /* ContainerListCell.swift in Sources */,
 				01097A98291A364300CD52B6 /* SignupVC.swift in Sources */,
 				01097A9B291A364300CD52B6 /* TabbarVC.swift in Sources */,
@@ -731,23 +848,30 @@
 				01097AA7291A364300CD52B6 /* SKToast.swift in Sources */,
 				0156949C291A3CC800461042 /* WelcomeVC.swift in Sources */,
 				01097A9A291A364300CD52B6 /* BaseVC.swift in Sources */,
+				01791E8E29238993008E4A28 /* TrackVC.swift in Sources */,
 				01097AA3291A364300CD52B6 /* SceneDelegate.swift in Sources */,
 				01097A9D291A364300CD52B6 /* Validator.swift in Sources */,
+				01791E85292386AC008E4A28 /* ShipmentModel.swift in Sources */,
 				01097AA2291A364300CD52B6 /* AppDelegate.swift in Sources */,
 				01996948291B763100926570 /* ShipVC.swift in Sources */,
 				01C66D78291CDFAD00009733 /* CountryModel.swift in Sources */,
 				01097A9C291A364300CD52B6 /* Constants.swift in Sources */,
+				014C06502924C24F00BF79EA /* ProfileVC.swift in Sources */,
 				01097A9E291A364300CD52B6 /* Util.swift in Sources */,
+				01791E8329237E02008E4A28 /* InvoiceModel.swift in Sources */,
 				01097A9F291A364300CD52B6 /* Extensions.swift in Sources */,
+				019A7449292372AF00E063F2 /* InvoiceCell.swift in Sources */,
 				01059A6E291CBCD800F846D0 /* OverviewCell.swift in Sources */,
 				01C66D75291CDC8000009733 /* SearchDropDownVC.swift in Sources */,
 				01059A78291CBD5900F846D0 /* TransportPlanCell.swift in Sources */,
+				01791E90292389B4008E4A28 /* TrackCell.swift in Sources */,
 				01097A99291A364300CD52B6 /* TermsAcceptVC.swift in Sources */,
 				01097AA8291A364300CD52B6 /* RPicker.swift in Sources */,
 				0199694A291B763B00926570 /* BookVC.swift in Sources */,
 				01097AAA291A364300CD52B6 /* User.swift in Sources */,
 				01E42846291B698B004998F2 /* SignupIDVC.swift in Sources */,
 				01097A97291A364300CD52B6 /* ChangePasswordVC.swift in Sources */,
+				01B54ED12924CA770064B20F /* TransactionCell.swift in Sources */,
 				01097A96291A364300CD52B6 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

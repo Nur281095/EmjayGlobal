@@ -26,6 +26,8 @@ class WelcomeVC: UIViewController {
     }
     
     @IBAction func guestTap(_ sender: Any) {
+        Util.shared.isGuest = true
+        SceneDelegate.shared?.checkUserLoggedIn()
     }
     
 }

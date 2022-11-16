@@ -29,13 +29,13 @@
                         <rect key="frame" x="5" y="5" width="343" height="111"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRv-zE-4N2">
-                                <rect key="frame" x="10" y="10" width="37.333333333333336" height="15"/>
+                                <rect key="frame" x="10" y="10" width="38" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="On its way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LT-CX-Ubc">
-                                <rect key="frame" x="52.333333333333343" y="8" width="74" height="19"/>
+                                <rect key="frame" x="52.999999999999993" y="7.6666666666666643" width="75.333333333333314" height="19"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.46274509800000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -60,13 +60,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated arrival date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-4s-FKt">
-                                <rect key="frame" x="10" y="84" width="117" height="15"/>
+                                <rect key="frame" x="10" y="84" width="117" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 Aug 2022, 18:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-WT-XIY">
-                                <rect key="frame" x="133" y="84" width="98" height="15"/>
+                                <rect key="frame" x="133" y="84" width="98" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
                                 <color key="textColor" red="0.30588235294117649" green="0.078431372549019607" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -106,6 +106,7 @@
                 <outlet property="city1" destination="ehO-Xh-5Aq" id="aGk-zB-ic0"/>
                 <outlet property="city2" destination="vCe-6y-CGn" id="swp-6H-Sh7"/>
                 <outlet property="date" destination="bzV-WT-XIY" id="kT2-3e-iDK"/>
+                <outlet property="shadV" destination="CRH-GN-GzN" id="IDy-Vk-PYM"/>
                 <outlet property="statusLbl" destination="4LT-CX-Ubc" id="dIh-eD-JnC"/>
             </connections>
             <point key="canvasLocation" x="126.92307692307692" y="65.758293838862556"/>

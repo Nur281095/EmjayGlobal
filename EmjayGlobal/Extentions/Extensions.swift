@@ -781,14 +781,14 @@ extension UIStackView {
 }
 
 extension UIView {
-    func addShadow(_ cornerRadius: CGFloat? = nil) {
-      self.layer.shadowColor = UIColor.gray.cgColor
-      self.layer.shadowOffset = CGSize(width: 1, height: 1)
-      self.layer.shadowOpacity = 1
-      backgroundColor = .white
-        self.layer.cornerRadius = cornerRadius != nil ? self.frame.height/2 : cornerRadius!
-      self.layer.masksToBounds = false
-  }
+    func addShadow(_ cornerRadius: CGFloat? = nil, _ color: UIColor? = nil) {
+        self.layer.shadowColor = color == nil ? UIColor.gray.cgColor : color?.cgColor
+        self.layer.shadowOffset = CGSize(width: 1, height: 1)
+        self.layer.shadowOpacity = 1
+        backgroundColor = .white
+        self.layer.cornerRadius = cornerRadius == nil ? self.frame.height/2 : cornerRadius!
+        self.layer.masksToBounds = false
+    }
 }
 
 extension UILabel {
@@ -812,3 +812,4 @@ extension UINavigationController {
     }
   }
 }
+

@@ -37,7 +37,8 @@ class ALF: NSObject {
         
         var headers: HTTPHeaders?
         if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.accessToken]
+//            headers = ["accesstoken": Util.getUser()!.accessToken]
+            headers = ["accesstoken": "606121668500278"]
         } else {
             headers = [:]
         }
@@ -90,7 +91,7 @@ class ALF: NSObject {
 //
 //        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 ////        if Util.isLoggedIn() {
-////            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "Authorization")
+////            request.addValue(Util.getUser()!.token, forHTTPHeaderField: "accesstoken")
 ////        }
 //        //create dataTask using the session object to send data to the server
 //        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
@@ -131,7 +132,8 @@ class ALF: NSObject {
         var headers: HTTPHeaders?
         let manager = Alamofire.Session.default
         if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.accessToken]
+//            headers = ["accesstoken": Util.getUser()!.accessToken]
+            headers = ["accesstoken": "606121668500278"]
         } else {
             headers = [:]
         }
@@ -171,7 +173,8 @@ class ALF: NSObject {
         let headers: HTTPHeaders?
         
         if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.accessToken]
+//            headers = ["accesstoken": Util.getUser()!.accessToken]
+            headers = ["accesstoken": "606121668500278"]
         } else {
             headers = [:]
         }
@@ -236,7 +239,8 @@ class ALF: NSObject {
         let headers: HTTPHeaders?
         
         if Util.isLoggedIn() {
-            headers = ["Authorization": Util.getUser()!.accessToken]
+//            headers = ["accesstoken": Util.getUser()!.accessToken]
+            headers = ["accesstoken": "606121668500278"]
         } else {
             headers = [:]
         }

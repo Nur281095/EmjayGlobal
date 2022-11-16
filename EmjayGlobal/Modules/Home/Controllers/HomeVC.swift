@@ -7,23 +7,41 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
-
+class HomeVC: BaseVC {
+    
+    @IBOutlet weak var barCodeBtn: UIButton!
+    @IBOutlet weak var guestV: UIView!
+    
+    @IBOutlet weak var search: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guestV.isHidden = !Util.shared.isGuest
+        self.navigationItem.rightBarButtonItem = btnRight(image: "ic_profile", isOrignal: true)
+        self.navigationItem.title = "Home"
+        setupWhiteNav()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func btnRightAction(_ sender: Any) {
+        if Util.shared.isGuest {
+            Util.shared.isGuest = false
+            SceneDelegate.shared?.checkUserLoggedIn()
+        } else {
+            let vc = UIStoryboard.storyBoard(withName: .profile).loadViewController(withIdentifier: .profileVC)
+            self.show(vc, sender: self)
+        }
     }
-    */
+    
+    @IBAction func barcodeTap(_ sender: Any) {
+        
+    }
+    
+    @IBAction func loginTap(_ sender: Any) {
+        Util.shared.isGuest = false
+        SceneDelegate.shared?.checkUserLoggedIn()
+    }
+    
 
 }

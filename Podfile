@@ -18,5 +18,6 @@ target 'EmjayGlobal' do
   pod 'Atributika'
   pod 'TagListView', '~> 1.0'
   pod 'StyledString'
+  pod 'BarcodeScanner'
 
 end

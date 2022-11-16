@@ -60,6 +60,7 @@ class TermsAcceptVC: BaseVC {
             return
         }
         Util.shared.isTerm = true
+        KEYS.saveTerms(shown: true)
         let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .welcomeVC) as! WelcomeVC
         self.show(vc, sender: self)
     }

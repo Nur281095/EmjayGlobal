@@ -28,6 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let vc = TabbarVC()
             self.window?.rootViewController = vc
         } else {
+            Util.shared.isTerm = KEYS.getTerm()
             if Util.shared.isTerm {
                 let vc = UIStoryboard.storyBoard(withName: .auth).loadViewController(withIdentifier: .welcomeVC) as! WelcomeVC
                 let nav = UINavigationController(rootViewController: vc)

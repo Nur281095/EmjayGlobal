@@ -68,7 +68,7 @@ public struct SCREEN {
 public struct KEYS {
     static let cartID = "cart_id"
     static let address = "address"
-
+    static let isTerm = "terms"
     
     static func saveCartID(id: String){
         UserDefaults.standard.set(id, forKey: KEYS.cartID)
@@ -81,5 +81,13 @@ public struct KEYS {
     }
     static func getAddress() -> String {
         return UserDefaults.standard.object(forKey: KEYS.address) as? String ?? ""
+    }
+    
+    static func saveTerms(shown: Bool){
+        UserDefaults.standard.set(shown, forKey: KEYS.isTerm)
+    }
+    
+    static func getTerm() -> Bool {
+        return UserDefaults.standard.object(forKey: KEYS.isTerm) as? Bool ?? false
     }
 }
