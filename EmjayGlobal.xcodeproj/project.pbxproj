@@ -45,10 +45,13 @@
 		01097ABD291A368500CD52B6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */; };
 		01097ABE291A368500CD52B6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB5291A368500CD52B6 /* Roboto-Black.ttf */; };
 		01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01171D702924D09300D63471 /* TransactionDetailVC.swift */; };
+		0120C4BC29274AEF005CBFC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120C4BB29274AEF005CBFC7 /* HomeModel.swift */; };
+		012F093B2927588B002BF2CB /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F093A2927588B002BF2CB /* RecentSearchCell.swift */; };
 		014C064E2924C22500BF79EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014C064D2924C22500BF79EA /* Profile.storyboard */; };
 		014C06502924C24F00BF79EA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014C064F2924C24F00BF79EA /* ProfileVC.swift */; };
 		0156949A291A3C4800461042 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01569499291A3C4800461042 /* Roboto-Light.ttf */; };
 		0156949C291A3CC800461042 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0156949B291A3CC800461042 /* WelcomeVC.swift */; };
+		0173BED12926399400FB381F /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0173BED02926399400FB381F /* TransactionModel.swift */; };
 		0178C760291A35290088ADCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0178C75F291A35290088ADCE /* Assets.xcassets */; };
 		0178C763291A35290088ADCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0178C761291A35290088ADCE /* LaunchScreen.storyboard */; };
 		01791E8329237E02008E4A28 /* InvoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8229237E02008E4A28 /* InvoiceModel.swift */; };
@@ -111,10 +114,13 @@
 		01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		01097AB5291A368500CD52B6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		01171D702924D09300D63471 /* TransactionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailVC.swift; sourceTree = "<group>"; };
+		0120C4BB29274AEF005CBFC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		012F093A2927588B002BF2CB /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		014C064D2924C22500BF79EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		014C064F2924C24F00BF79EA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		01569499291A3C4800461042 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../../../../../Downloads/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		0156949B291A3CC800461042 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		0173BED02926399400FB381F /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		0178C753291A35260088ADCE /* EmjayGlobal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmjayGlobal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0178C75F291A35290088ADCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0178C762291A35290088ADCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -219,6 +225,7 @@
 		01097A69291A364300CD52B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0120C4BB29274AEF005CBFC7 /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 		01097A6C291A364300CD52B6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				012F093A2927588B002BF2CB /* RecentSearchCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -457,6 +465,7 @@
 		014C064B2924C21300BF79EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0173BED02926399400FB381F /* TransactionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -832,6 +841,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012F093B2927588B002BF2CB /* RecentSearchCell.swift in Sources */,
 				01097AA6291A364300CD52B6 /* AppStoryboards.swift in Sources */,
 				01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */,
 				01B54ECF2924CA5A0064B20F /* TransactionHistoryVC.swift in Sources */,
@@ -850,6 +860,7 @@
 				01097A9A291A364300CD52B6 /* BaseVC.swift in Sources */,
 				01791E8E29238993008E4A28 /* TrackVC.swift in Sources */,
 				01097AA3291A364300CD52B6 /* SceneDelegate.swift in Sources */,
+				0173BED12926399400FB381F /* TransactionModel.swift in Sources */,
 				01097A9D291A364300CD52B6 /* Validator.swift in Sources */,
 				01791E85292386AC008E4A28 /* ShipmentModel.swift in Sources */,
 				01097AA2291A364300CD52B6 /* AppDelegate.swift in Sources */,
@@ -864,6 +875,7 @@
 				01059A6E291CBCD800F846D0 /* OverviewCell.swift in Sources */,
 				01C66D75291CDC8000009733 /* SearchDropDownVC.swift in Sources */,
 				01059A78291CBD5900F846D0 /* TransportPlanCell.swift in Sources */,
+				0120C4BC29274AEF005CBFC7 /* HomeModel.swift in Sources */,
 				01791E90292389B4008E4A28 /* TrackCell.swift in Sources */,
 				01097A99291A364300CD52B6 /* TermsAcceptVC.swift in Sources */,
 				01097AA8291A364300CD52B6 /* RPicker.swift in Sources */,

@@ -24,7 +24,16 @@ class ShipVC: BaseVC {
 
         getShips()
     }
-    
+    override func btnRightAction(_ sender: Any) {
+        if Util.shared.isGuest {
+            Util.shared.isGuest = false
+            SceneDelegate.shared?.checkUserLoggedIn()
+            
+        } else {
+            let vc = UIStoryboard.storyBoard(withName: .profile).loadViewController(withIdentifier: .profileVC)
+            self.show(vc, sender: self)
+        }
+    }
     func getShips() {
         Util.shared.showSpinner()
         ALF.shared.doGetData(parameters: [:], method: "getShipments") { response in

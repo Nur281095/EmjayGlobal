@@ -36,8 +36,14 @@ class InvoiceVC: BaseVC {
     }
     
     override func btnRightAction(_ sender: Any) {
-        let vc = UIStoryboard.storyBoard(withName: .track).loadViewController(withIdentifier: .trackVC)
-        self.show(vc, sender: self)
+        if Util.shared.isGuest {
+            Util.shared.isGuest = false
+            SceneDelegate.shared?.checkUserLoggedIn()
+            
+        } else {
+            let vc = UIStoryboard.storyBoard(withName: .profile).loadViewController(withIdentifier: .profileVC)
+            self.show(vc, sender: self)
+        }
     }
     
     func getInvoices() {

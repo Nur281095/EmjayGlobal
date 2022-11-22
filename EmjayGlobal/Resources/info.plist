@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Allow to scan  qr code of shipments</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow to download annd save reports</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Allow to download annd save reports</string>
 </dict>
 </plist>

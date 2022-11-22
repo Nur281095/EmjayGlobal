@@ -24,5 +24,11 @@ class TrackCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func configCell(model: RecentSearch) {
+        booking.text = "BOOKING#:b/\(model.trackNumber ?? "")"
+        date.text = "Current ETA \(model.shipmentDate ?? "")"
+        frm.text = model.shipmentFrom
+        to.text = model.shipmentTo
+    }
 
 }

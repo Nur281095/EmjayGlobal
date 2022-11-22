@@ -407,7 +407,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu1-Co-PKQ">
-                                                            <rect key="frame" x="253" y="78" width="57" height="15"/>
+                                                            <rect key="frame" x="253" y="78" width="71" height="15"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -433,6 +433,7 @@
                                                         <constraint firstItem="UEf-DK-eDM" firstAttribute="leading" secondItem="3gb-LT-LIL" secondAttribute="trailing" constant="6" id="Ln2-0P-0sD"/>
                                                         <constraint firstItem="UEf-DK-eDM" firstAttribute="centerY" secondItem="3gb-LT-LIL" secondAttribute="centerY" id="PPx-HJ-DoH"/>
                                                         <constraint firstItem="wPd-P1-1iS" firstAttribute="leading" secondItem="9VE-Qn-X1e" secondAttribute="leading" constant="28" id="VE5-fq-rJq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xu1-Co-PKQ" secondAttribute="trailing" constant="15" id="ZtD-B8-RR5"/>
                                                         <constraint firstItem="zg4-k8-8wb" firstAttribute="leading" secondItem="wPd-P1-1iS" secondAttribute="leading" id="cuH-EL-B2l"/>
                                                         <constraint firstItem="a0y-2I-zgp" firstAttribute="leading" secondItem="bac-KP-tQJ" secondAttribute="trailing" constant="6" id="ekh-gA-cZ2"/>
                                                         <constraint firstItem="zMV-on-blI" firstAttribute="centerY" secondItem="UEf-DK-eDM" secondAttribute="centerY" id="elZ-Yx-tA8"/>
@@ -611,7 +612,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8d-N3-Enn">
-                                                <rect key="frame" x="209" y="128" width="69.333333333333314" height="15"/>
+                                                <rect key="frame" x="209" y="128" width="75" height="15"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" red="0.24753132459999999" green="0.45603781939999999" blue="0.59217482809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -623,7 +624,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 1000.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSG-ox-Ob0">
-                                                <rect key="frame" x="209" y="158" width="71" height="15"/>
+                                                <rect key="frame" x="209" y="158" width="75" height="15"/>
                                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="12"/>
                                                 <color key="textColor" red="0.24753132459999999" green="0.45603781939999999" blue="0.59217482809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -647,6 +648,7 @@
                                             <constraint firstItem="bwS-vl-rCr" firstAttribute="leading" secondItem="bQs-y6-gDo" secondAttribute="trailing" constant="6" id="1vq-bQ-W74"/>
                                             <constraint firstItem="vUJ-X3-LFa" firstAttribute="leading" secondItem="BQ1-cU-WDG" secondAttribute="leading" constant="10" id="2TN-SS-RuM"/>
                                             <constraint firstAttribute="height" constant="187" id="8UL-LN-Ul3"/>
+                                            <constraint firstAttribute="trailing" secondItem="zSG-ox-Ob0" secondAttribute="trailing" constant="15" id="9tZ-jM-o5V"/>
                                             <constraint firstItem="J8d-N3-Enn" firstAttribute="leading" secondItem="LnO-Rs-8x1" secondAttribute="leading" id="BiS-uw-9Ob"/>
                                             <constraint firstItem="zSG-ox-Ob0" firstAttribute="centerY" secondItem="vUJ-X3-LFa" secondAttribute="centerY" id="CoJ-PY-dl2"/>
                                             <constraint firstAttribute="trailing" secondItem="Dj9-Ax-egX" secondAttribute="trailing" constant="15" id="ELP-aj-zmr"/>
@@ -658,6 +660,7 @@
                                             <constraint firstItem="qfL-xR-7UV" firstAttribute="top" secondItem="3mS-zn-ERg" secondAttribute="bottom" constant="15" id="QX9-ct-l7Q"/>
                                             <constraint firstItem="zSG-ox-Ob0" firstAttribute="leading" secondItem="LnO-Rs-8x1" secondAttribute="leading" id="Qh0-XG-dwG"/>
                                             <constraint firstItem="pkk-LL-WuT" firstAttribute="centerY" secondItem="Ofq-mm-Tbh" secondAttribute="centerY" id="XcF-Vg-aw2"/>
+                                            <constraint firstAttribute="trailing" secondItem="J8d-N3-Enn" secondAttribute="trailing" constant="15" id="ZJv-Na-w7i"/>
                                             <constraint firstItem="Dj9-Ax-egX" firstAttribute="centerY" secondItem="pkk-LL-WuT" secondAttribute="centerY" id="cl0-Gw-088"/>
                                             <constraint firstItem="bQs-y6-gDo" firstAttribute="leading" secondItem="BQ1-cU-WDG" secondAttribute="leading" constant="10" id="djy-ic-bcr"/>
                                             <constraint firstItem="Ofq-mm-Tbh" firstAttribute="leading" secondItem="BQ1-cU-WDG" secondAttribute="leading" constant="10" id="k4u-RP-9mN"/>
@@ -729,6 +732,7 @@
                         <outlet property="id" destination="tyD-ee-SYb" id="sU7-yL-cVF"/>
                         <outlet property="qrCode" destination="XAN-eJ-Gop" id="bl9-BS-yVm"/>
                         <outlet property="shadV" destination="BQ1-cU-WDG" id="15O-CS-6ci"/>
+                        <outlet property="ssView" destination="jeo-8K-b0c" id="AwI-Xh-ZBb"/>
                         <outlet property="to" destination="RJ9-Fz-yRZ" id="A9o-R4-A3T"/>
                         <outlet property="total" destination="zSG-ox-Ob0" id="rLh-lK-ClI"/>
                         <outlet property="transitTime" destination="LnO-Rs-8x1" id="Qgn-ZZ-3Le"/>

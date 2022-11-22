@@ -27,5 +27,12 @@ class TransactionCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func configCell(model: TransactionModel) {
+        date1.text = model.departureDate
+        date2.text = model.arrivalDate
+        transitTime.text = model.trnasitTime
+        freight.text = "USD \(String(describing: model.amount!))"
+        total.text = "USD \(String(describing: model.amount!))"
+    }
 }
