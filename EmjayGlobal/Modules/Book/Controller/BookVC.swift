@@ -18,15 +18,24 @@ class BookVC: BaseVC {
     }
     
     @IBAction func perEffectTap(_ sender: Any) {
+        let vc = UIStoryboard.storyBoard(withName: .book).loadViewController(withIdentifier: .normalShipVC) as! NormalShipVC
+        vc.navTitle = "Personal Effect Booking"
+        self.show(vc, sender: self)
     }
     
     @IBAction func ocienFrTap(_ sender: Any) {
+        let vc = UIStoryboard.storyBoard(withName: .book).loadViewController(withIdentifier: .normalShipVC) as! NormalShipVC
+        vc.navTitle = "Ocean Freight Booking"
+        self.show(vc, sender: self)
     }
     
     @IBAction func vehShipTap(_ sender: Any) {
     }
     
     @IBAction func airFrTap(_ sender: Any) {
+        let vc = UIStoryboard.storyBoard(withName: .book).loadViewController(withIdentifier: .normalShipVC) as! NormalShipVC
+        vc.navTitle = "Air Freight Booking"
+        self.show(vc, sender: self)
     }
     
 }

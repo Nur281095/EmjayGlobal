@@ -45,6 +45,7 @@
 		01097ABD291A368500CD52B6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */; };
 		01097ABE291A368500CD52B6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB5291A368500CD52B6 /* Roboto-Black.ttf */; };
 		01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01171D702924D09300D63471 /* TransactionDetailVC.swift */; };
+		011C8AF729372FCE009DA979 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C8AF629372FCE009DA979 /* CheckBox.swift */; };
 		0120C4BC29274AEF005CBFC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120C4BB29274AEF005CBFC7 /* HomeModel.swift */; };
 		012F093B2927588B002BF2CB /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F093A2927588B002BF2CB /* RecentSearchCell.swift */; };
 		014C064E2924C22500BF79EA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014C064D2924C22500BF79EA /* Profile.storyboard */; };
@@ -59,6 +60,7 @@
 		01791E8C2923897A008E4A28 /* Track.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01791E8B2923897A008E4A28 /* Track.storyboard */; };
 		01791E8E29238993008E4A28 /* TrackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8D29238993008E4A28 /* TrackVC.swift */; };
 		01791E90292389B4008E4A28 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01791E8F292389B4008E4A28 /* TrackCell.swift */; };
+		0181B2EF2937376900025CF7 /* NormalShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0181B2EE2937376900025CF7 /* NormalShipVC.swift */; };
 		01996940291B75F600926570 /* Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0199693F291B75F600926570 /* Book.storyboard */; };
 		01996942291B760100926570 /* Ship.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01996941291B760100926570 /* Ship.storyboard */; };
 		01996944291B760E00926570 /* Invoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01996943291B760E00926570 /* Invoice.storyboard */; };
@@ -114,6 +116,7 @@
 		01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		01097AB5291A368500CD52B6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		01171D702924D09300D63471 /* TransactionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailVC.swift; sourceTree = "<group>"; };
+		011C8AF629372FCE009DA979 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		0120C4BB29274AEF005CBFC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		012F093A2927588B002BF2CB /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		014C064D2924C22500BF79EA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 		01791E8B2923897A008E4A28 /* Track.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Track.storyboard; sourceTree = "<group>"; };
 		01791E8D29238993008E4A28 /* TrackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackVC.swift; sourceTree = "<group>"; };
 		01791E8F292389B4008E4A28 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		0181B2EE2937376900025CF7 /* NormalShipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalShipVC.swift; sourceTree = "<group>"; };
 		0199693F291B75F600926570 /* Book.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Book.storyboard; sourceTree = "<group>"; };
 		01996941291B760100926570 /* Ship.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ship.storyboard; sourceTree = "<group>"; };
 		01996943291B760E00926570 /* Invoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invoice.storyboard; sourceTree = "<group>"; };
@@ -305,6 +309,7 @@
 		01097A79291A364300CD52B6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				011C8AF629372FCE009DA979 /* CheckBox.swift */,
 				01097A7A291A364300CD52B6 /* Constants.swift */,
 				01097A7B291A364300CD52B6 /* Validator.swift */,
 				01097A7C291A364300CD52B6 /* Util.swift */,
@@ -631,6 +636,7 @@
 			isa = PBXGroup;
 			children = (
 				01996949291B763B00926570 /* BookVC.swift */,
+				0181B2EE2937376900025CF7 /* NormalShipVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -866,10 +872,12 @@
 				01097AA2291A364300CD52B6 /* AppDelegate.swift in Sources */,
 				01996948291B763100926570 /* ShipVC.swift in Sources */,
 				01C66D78291CDFAD00009733 /* CountryModel.swift in Sources */,
+				0181B2EF2937376900025CF7 /* NormalShipVC.swift in Sources */,
 				01097A9C291A364300CD52B6 /* Constants.swift in Sources */,
 				014C06502924C24F00BF79EA /* ProfileVC.swift in Sources */,
 				01097A9E291A364300CD52B6 /* Util.swift in Sources */,
 				01791E8329237E02008E4A28 /* InvoiceModel.swift in Sources */,
+				011C8AF729372FCE009DA979 /* CheckBox.swift in Sources */,
 				01097A9F291A364300CD52B6 /* Extensions.swift in Sources */,
 				019A7449292372AF00E063F2 /* InvoiceCell.swift in Sources */,
 				01059A6E291CBCD800F846D0 /* OverviewCell.swift in Sources */,
