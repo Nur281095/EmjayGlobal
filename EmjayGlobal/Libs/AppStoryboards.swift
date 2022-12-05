@@ -54,5 +54,7 @@ enum viewControllers: String {
          profileVC = "ProfileVC",
          transactionHistoryVC = "TransactionHistoryVC",
          transactionDetailVC = "TransactionDetailVC",
-         normalShipVC = "NormalShipVC"
+         normalShipVC = "NormalShipVC",
+         vehichleShipVC = "VehichleShipVC",
+         addVehicleVC = "AddVehicleVC"
 }

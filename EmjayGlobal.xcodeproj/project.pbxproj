@@ -45,6 +45,7 @@
 		01097ABD291A368500CD52B6 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */; };
 		01097ABE291A368500CD52B6 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01097AB5291A368500CD52B6 /* Roboto-Black.ttf */; };
 		01171D712924D09400D63471 /* TransactionDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01171D702924D09300D63471 /* TransactionDetailVC.swift */; };
+		011926DF293856C900926B41 /* VehichleShipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011926DE293856C900926B41 /* VehichleShipVC.swift */; };
 		011C8AF729372FCE009DA979 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011C8AF629372FCE009DA979 /* CheckBox.swift */; };
 		0120C4BC29274AEF005CBFC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120C4BB29274AEF005CBFC7 /* HomeModel.swift */; };
 		012F093B2927588B002BF2CB /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F093A2927588B002BF2CB /* RecentSearchCell.swift */; };
@@ -74,6 +75,7 @@
 		01C66D75291CDC8000009733 /* SearchDropDownVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C66D74291CDC8000009733 /* SearchDropDownVC.swift */; };
 		01C66D78291CDFAD00009733 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C66D77291CDFAD00009733 /* CountryModel.swift */; };
 		01E42846291B698B004998F2 /* SignupIDVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E42845291B698B004998F2 /* SignupIDVC.swift */; };
+		01E997DD29385FAC00329EFF /* AddVehicleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E997DC29385FAC00329EFF /* AddVehicleVC.swift */; };
 		A8C84AE8CE9B0FA452AFBF9B /* Pods_EmjayGlobal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7446AC6DA987894D11B99490 /* Pods_EmjayGlobal.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +118,7 @@
 		01097AB4291A368500CD52B6 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		01097AB5291A368500CD52B6 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		01171D702924D09300D63471 /* TransactionDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailVC.swift; sourceTree = "<group>"; };
+		011926DE293856C900926B41 /* VehichleShipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehichleShipVC.swift; sourceTree = "<group>"; };
 		011C8AF629372FCE009DA979 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		0120C4BB29274AEF005CBFC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		012F093A2927588B002BF2CB /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		01C66D74291CDC8000009733 /* SearchDropDownVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDropDownVC.swift; sourceTree = "<group>"; };
 		01C66D77291CDFAD00009733 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		01E42845291B698B004998F2 /* SignupIDVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupIDVC.swift; sourceTree = "<group>"; };
+		01E997DC29385FAC00329EFF /* AddVehicleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleVC.swift; sourceTree = "<group>"; };
 		7446AC6DA987894D11B99490 /* Pods_EmjayGlobal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmjayGlobal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3325ACED34E948470478C9B /* Pods-EmjayGlobal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmjayGlobal.release.xcconfig"; path = "Target Support Files/Pods-EmjayGlobal/Pods-EmjayGlobal.release.xcconfig"; sourceTree = "<group>"; };
 		F01AF89453F196957158B3FD /* Pods-EmjayGlobal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmjayGlobal.debug.xcconfig"; path = "Target Support Files/Pods-EmjayGlobal/Pods-EmjayGlobal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -637,6 +641,8 @@
 			children = (
 				01996949291B763B00926570 /* BookVC.swift */,
 				0181B2EE2937376900025CF7 /* NormalShipVC.swift */,
+				011926DE293856C900926B41 /* VehichleShipVC.swift */,
+				01E997DC29385FAC00329EFF /* AddVehicleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -890,9 +896,11 @@
 				0199694A291B763B00926570 /* BookVC.swift in Sources */,
 				01097AAA291A364300CD52B6 /* User.swift in Sources */,
 				01E42846291B698B004998F2 /* SignupIDVC.swift in Sources */,
+				011926DF293856C900926B41 /* VehichleShipVC.swift in Sources */,
 				01097A97291A364300CD52B6 /* ChangePasswordVC.swift in Sources */,
 				01B54ED12924CA770064B20F /* TransactionCell.swift in Sources */,
 				01097A96291A364300CD52B6 /* LoginVC.swift in Sources */,
+				01E997DD29385FAC00329EFF /* AddVehicleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

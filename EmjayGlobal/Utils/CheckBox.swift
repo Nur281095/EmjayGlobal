@@ -54,6 +54,7 @@ open class CheckBox: UIControl {
     @IBInspectable
     var checkmarkColor: UIColor = #colorLiteral(red: 0, green: 0.3285208941, blue: 0.5748849511, alpha: 1)
     
+    @IBInspectable
     var checkboxBackgroundColor: UIColor! = .white
     
     //Used to increase the touchable are for the component

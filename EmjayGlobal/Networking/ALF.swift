@@ -160,13 +160,13 @@ class ALF: NSObject {
     /****************************  ***********************************/
     /*************** POST Method with PARAMS and IMAGE *******************/
     /****************************  ***********************************/
-    func doPostDataWithImage(parameters: [String:String], method: String, image: UIImage?, success:@escaping SuccessBlock, fail: @escaping FailureBlock) {
+    func doPostDataWithImage(parameters: [String:String], method: String, image: UIImage?, fileName: String, success:@escaping SuccessBlock, fail: @escaping FailureBlock) {
         
-        self.postMethodWithParamsAndImage(parameters: parameters, forMethod: self.urlString(subUrl: method), image: image, success: success, fail: fail)
+        self.postMethodWithParamsAndImage(parameters: parameters, forMethod: self.urlString(subUrl: method), image: image, fileName: fileName, success: success, fail: fail)
     }
     
     
-    private func postMethodWithParamsAndImage(parameters: [String:String], forMethod: String, image: UIImage?, success:@escaping SuccessBlock, fail:@escaping FailureBlock){
+    private func postMethodWithParamsAndImage(parameters: [String:String], forMethod: String, image: UIImage?, fileName: String, success:@escaping SuccessBlock, fail:@escaping FailureBlock){
         
         let manager = Alamofire.Session.default
         manager.session.configuration.timeoutIntervalForRequest = 30
@@ -178,17 +178,18 @@ class ALF: NSObject {
         } else {
             headers = [:]
         }
+        
         manager.upload(
             multipartFormData: { multipartFormData in
                 print(parameters)
                 print(image as Any)
                 if image != nil {
                     
-                    var imgData = (image?.jpeg(.high))!
+                    var imgData = (image?.jpeg(.medium))!
                     
                     print(imgData.count)
                     
-                    multipartFormData.append(imgData, withName: "file", fileName: "image.png", mimeType: "image/png")
+                    multipartFormData.append(imgData, withName: "file", fileName: "\(fileName).jpg", mimeType: "image/jpg")
                     
                 }
                 if !(parameters.isEmpty) {
@@ -215,7 +216,7 @@ class ALF: NSObject {
                 print(multipartFormData)
         },
             to: forMethod, method: .post , headers: headers)
-            .response { response in
+            .responseJSON { response in
                 switch response.result {
                 case .success:
                     if response.value != nil{
